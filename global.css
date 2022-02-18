@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type=email],
+input[type=password] {
+  padding: 0 12.5px;
+  width: 225px;
+  height: auto;
+  background-color: transparent;
+  border: 0;
+  border-radius: 100px;
+  color: #ccc;
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #ccc;
+}
+/*********************************************************************************************/
+
+/* #modal */
+#modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #999;
+  z-index: 50;
+  display: none; /* flex */
+}
+
+#modal .title {
+  padding: 20vh 0 5px;
+  color: white;
+  font-size: 30px;
+  /* font-weight: bold; */
+}
+
+#modal .description {
+  font-size: 15px;
+}
+
+#modal .container {
+  padding: 30px 0;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  text-align: center;
+  display: flex;
+}
+
+#modal .container input {
+  height: 40px;
+  box-shadow: 0 0 10px #333;
+}
+
+#modal .buttons {
+  margin: 0 auto;
+  /* justify-content: space-between; */
+  width: 400px;
+  max-width: 100%;
+  height: 27.5px;
+  display: flex;
+}
+
+#modal .buttons button {
+  padding: 0 12.5px;
+  align-items: center;
+  height: 27.5px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px #333;
+  color: #aaa;
+  font-size: 12px;
+  display: inline-flex;
+}
+/*********************************************************************************************/
+
+/* #modal .container.loginform */
+#modal .container.loginform form {
+  align-items: center;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+  display: flex;
+}
+
+#modal .container.loginform form input {
+  width: 100%;
+}
+
+#modal .container.loginform form button {
+  padding: 0 12.5px;
+  align-items: center;
+  height: 27.5px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px #333;
+  color: #ccc;
+  font-size: 12px;
+  display: inline-flex;
+}
+
+#modal .container.loginform .notes {
+  flex-direction: column;
+  row-gap: 5px;
+  font-size: 15px;
+  display: flex;
+}
+
+#modal .container.loginform .notes .note button {
+  color: white;
+  font-weight: bold;
+}
+/*********************************************************************************************/
+
+/* #background */
+#background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/lib/images/background.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -50;
+}
+/*********************************************************************************************/
