@@ -138,7 +138,7 @@ input::-webkit-input-placeholder {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://rawcdn.githack.com/wizity-network/static/d0b9a5b380259bccd0b61e9023d106c995e807a7/lib/images/background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/lib/images/background.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
